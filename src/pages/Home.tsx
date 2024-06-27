@@ -20,7 +20,6 @@ const Home = () => {
     gitApi.getUser(user)
       .then(response => navigate(`/${response.login}`))
       .catch(error => {
-        console.log(error)
         setInvalid(true)
       })
 
